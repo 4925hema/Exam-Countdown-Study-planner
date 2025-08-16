@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Countdown & Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1>Exam Countdown & Study Planner</h1>
+      <form id="examForm">
+        <label>Exam Name:</label>
+        <input type="text" id="examName" required>
+        <label>Exam Date:</label>
+        <input type="date" id="examDate" required>
+        <label>Study Topics (comma-separated):</label>
+        <input type="text" id="topics" required>
+        <label>Sub-topics (comma-separated):</label>
+        <input type="text" id="subtopics">
+        <label>Study Time per Topic (hh:mm):</label>
+        <input type="time" id="topicTime" required>
+        <label>Study Time per Sub-topic (hh:mm):</label>
+        <input type="time" id="subtopicTime">
+        <button type="submit">Add Exam</button>
+      </form>
+      <div class="buttons">
+        <button id="showPlans">Show Previous Plans</button>
+      </div>
+      <div id="plansContainer"></div>
+    </div>
+    <div class="right-panel">
+      <h2>Study Plan Flowchart</h2>
+      <div id="flowchartContainer"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

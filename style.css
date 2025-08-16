@@ -1,0 +1,67 @@
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, button {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background: #27ae60;
+}
+#plansContainer .plan {
+  background: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 5px solid #3498db;
+  border-radius: 5px;
+}
+#plansContainer .plan button {
+  background: #e74c3c;
+  margin-top: 5px;
+}
+#flowchartContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+.flow-node {
+  padding: 10px 15px;
+  background: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.flow-node::after {
+  content: "↓";
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin-top: 5px;
+}
